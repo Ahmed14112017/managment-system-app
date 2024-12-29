@@ -1,0 +1,212 @@
+:root {
+  --maincolor: #ef9b28;
+}
+
+.auth-container {
+  background-image: url("src/assets/images/bg3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.login-contain {
+  background-color: #315951e5;
+  border-radius: 10px;
+}
+
+.Form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: white;
+  border-radius: 0;
+  width: 100%;
+}
+.Form-control:focus {
+  background-color: transparent;
+}
+.Form-control::placeholder {
+  color: white;
+}
+
+.from-link a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-submit {
+  background-color: var(--maincolor) !important;
+  border: none;
+  color: #fff !important;
+  width: 80% !important;
+}
+/*/*******************register*******************/
+.register {
+  background-color: rgba(49, 74, 89, 0.9);
+}
+.title {
+  color: var(--maincolor);
+}
+.title-sapn {
+  position: relative;
+}
+.title-sapn::after {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  background-color: var(--maincolor);
+}
+
+/*******************navbar***************/
+.user-content {
+  display: flex;
+}
+
+.alert-icon {
+  color: var(--maincolor);
+  position: relative;
+}
+.alert-icon::after {
+  position: absolute;
+  content: "";
+  color: #fff;
+  top: 0px;
+  right: -2px;
+  background-color: var(--maincolor);
+  width: 10px;
+  height: 10px;
+  border-radius: 50% 50%;
+  border: solid 1px #fff;
+}
+/**********************sidebar************************/
+.sidebar .css-dip3t8 {
+  background-color: #0e382f !important;
+  height: 100vh;
+  color: #fff;
+}
+.sidebar .css-nwj8xd:hover {
+  color: var(--maincolor);
+}
+
+.sidebar .css-nwj8xd > .ps-menu-button:hover {
+  background-color: #0e382f !important;
+}
+.sidebar {
+  position: relative;
+}
+.sidebar .side-button {
+  position: absolute;
+  background-color: var(--maincolor);
+  top: 20px;
+  right: -10px;
+  color: #fff;
+  z-index: 10;
+}
+.sidebar .side-button:hover {
+  background-color: var(--maincolor) !important;
+}
+
+/*********************header**************/
+.header-section {
+  background-image: url("../src//assets//images//home-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.item {
+  flex-grow: 1;
+}
+.header-content {
+  padding: 20px 20px;
+}
+.header-content > h3 {
+  margin-bottom: 20px;
+}
+.header-content > h3 > span {
+  color: var(--maincolor);
+}
+.header-content > p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/*************************dashboard****************************/
+
+.task-box {
+  background-color: #e5e6f4;
+  border-radius: 10px;
+}
+.task-box > img {
+  background-color: #cfd1ec;
+  padding: 10px;
+  border-radius: 50%;
+}
+/*********************user-sestion***************/
+/* .table>thead th{
+    background-color: #315951E5 !important;
+} */
+.table thead th {
+  background-color: #315951e5 !important;
+  padding: 15px;
+  border-right: 1px solid gray;
+  color: #fff;
+  font-weight: 300;
+}
+
+.add-button {
+  background-color: var(--maincolor) !important;
+  color: white !important;
+}
+.add-button > i {
+  padding-right: 5px;
+}
+.task-contain {
+  min-height: 400px;
+  background-color: #315951e5;
+  border-radius: 10px;
+}
+.task-progress {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.task-progress h5 {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+.task-content {
+  background-color: #315951e5;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  list-style: none;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.task-content p {
+  background-color: var(
+    --maincolor,
+    #ffa726
+  ); /* Fallback to orange if --maincolor is not defined */
+  padding: 10px 5px 10px 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.task-content p:hover {
+  background-color: #ffb74d;
+  transition: background-color 0.3s ease;
+}
