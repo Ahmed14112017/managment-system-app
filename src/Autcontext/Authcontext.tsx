@@ -16,6 +16,9 @@ export const AuthcontextProvider = ({ children }: props) => {
     if (token) {
       const decodedToken = jwtDecode(token);
       Setlogindata(decodedToken); // Store the decoded token
+    } else {
+      Setlogindata(null);
+      localStorage.removeItem("token");
     }
   };
   const logout = () => {
@@ -23,7 +26,7 @@ export const AuthcontextProvider = ({ children }: props) => {
     Setlogindata(null);
   };
   useEffect(() => {
-    if (localStorage.getItem("token")) savedata();
+    savedata();
   }, []);
 
   return (
