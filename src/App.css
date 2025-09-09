@@ -3,7 +3,7 @@
 }
 
 .auth-container {
-  background-image: url("src/assets/images/bg3.png");
+  background-image: url("../public//Images/bg3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@
 
 /*********************header**************/
 .header-section {
-  background-image: url("../src//assets//images//home-bg.png");
+  background-image: url("../public/Images/home-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
